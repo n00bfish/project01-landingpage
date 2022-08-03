@@ -1,4 +1,5 @@
 /*stylesheet for landing-page project index.thml */
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
 
 body{
     height:100vh; /*this makes the body exactly the same height as the viewport*/
@@ -7,14 +8,28 @@ body{
     flex:1;
     font-family: Roboto, sans-serif;
     margin:0;
+
+}
+
+img.rounded-corners{
+  border-radius:30px;
+  border:solid 5px #3882F6;
+  height:200px;
+  width:200px;
 }
 
 ul {
   list-style-type: none;
   display:flex;
   margin: 0;
-  padding: 0;
+  padding-top: 10px;
   gap: 20px;
+}
+
+a {
+  text-decoration:none;
+  font-size:18px;
+  color: #E5E7EB;
 }
 
 .content{
@@ -28,11 +43,34 @@ ul {
   justify-content:space-between;
   color:#F9FAF8;
   background-color: #1F2937;
+  padding-top:10px;
 }
 
-.photos {
+.logo{
+  font-size:24px;
+  color:#F9FAF8;
+}
+
+.info {
   display:flex;
+  flex-direction:column;
   background-color: white;
+  align-items:center;
+  padding-top: 10px;
+  gap:20px;
+}
+
+.info .title{
+  display:flex;
+  font-size:36px;
+  font-weight: 800;
+  color: #1F2937
+}
+
+.item .text{
+  display:flex; 
+  margin-top:10px;
+
 }
 
 .quote {
@@ -40,7 +78,7 @@ ul {
   background-color: #E5E7EB;
 }
 
-.sign {
+.end {
   display:flex;
   background-color: white;
 }
@@ -51,4 +89,5 @@ ul {
   color: white;
   justify-content:center;
   align-items: center;
+  padding:20px;
 }
