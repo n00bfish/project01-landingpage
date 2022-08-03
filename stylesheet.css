@@ -1,0 +1,114 @@
+/*stylesheet for landing-page project index.thml */
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+body{
+    height:100vh; /*this makes the body exactly the same height as the viewport*/
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    margin:0;
+
+}
+
+img.rounded-corners{
+  border-radius:30px;
+  border:solid 5px #3882F6;
+  height:200px;
+  width:200px;
+}
+
+ul.nav {
+  list-style-type: none;
+  display:flex;
+  margin: 0;
+  padding-top: 10px;
+  gap: 20px;
+}
+
+a.nav {
+  text-decoration:none;
+  font-size:18px;
+  color: #E5E7EB;
+}
+
+.content{
+  display:flex;
+  padding: 0 100px;
+  flex:1;
+}
+
+.header{
+  display:flex;
+  justify-content:space-between;
+  color:#F9FAF8;
+  background-color: #1F2937;
+  padding-top:10px;
+}
+
+.logo{
+  font-size:24px;
+  color:#F9FAF8;
+}
+
+.info {
+  display:flex;
+  flex-direction:column;
+  background-color: white;
+  align-items:center;
+  padding: 40px;
+  gap:40px;
+}
+
+.title{
+  display:flex;
+  font-size:36px;
+  font-weight: 800;
+  color: #1F2937
+}
+
+.items {
+  display:flex;
+  flex-flow:row wrap;
+  gap: 50px;
+  text-align:center;
+  padding-bottom: 40px;
+}
+
+.item .text{
+  display:flex; 
+  margin-top:10px;
+  width: 200px;
+}
+
+.quote {
+  display:flex;
+  flex:0;
+  flex-flow: column nowrap;
+  padding:100px 200px;
+  background-color: #E5E7EB;
+  gap:20px;
+  font-size:36px;
+  color: #1F2937;
+}
+
+b.author {
+  display:flex;
+  font-size:20px;
+  justify-content:end;
+}
+
+.end {
+  display:flex;
+  background-color: white;
+}
+
+.footer {
+  display:flex;
+  background-color: #1F2937;
+  color: white;
+  justify-content:center;
+  align-items: center;
+  padding:20px;
+}
