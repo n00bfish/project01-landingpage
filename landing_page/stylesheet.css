@@ -53,23 +53,26 @@ a {
 
 .info {
   display:flex;
-  flex-direction:column;
   background-color: white;
   align-items:center;
-  padding-top: 10px;
-  gap:20px;
+  gap: 10px;
 }
 
 .info .title{
   display:flex;
   font-size:36px;
   font-weight: 800;
-  color: #1F2937
+  color: #1F2937;
 }
 
 .item .text{
   display:flex; 
+  width:200px;
+  flex-flow: row wrap;
   margin-top:10px;
+  font-size:18px;
+  color: #1F2937;
+  text-align:center;
 
 }
 
