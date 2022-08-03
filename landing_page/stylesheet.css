@@ -18,7 +18,9 @@ ul {
 }
 
 .content{
+  display:flex;
   padding: 0 100px;
+  flex:1;
 }
 
 .header{
@@ -38,9 +40,9 @@ ul {
   background-color: #E5E7EB;
 }
 
-.ending {
+.sign {
   display:flex;
-  background-color: #E5E7EB;
+  background-color: white;
 }
 
 .footer {

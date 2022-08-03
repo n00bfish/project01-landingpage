@@ -1,32 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-    <header><meta charset="UTF-8">
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="../landing_page/stylesheet.css">
-</header>
-<body>
-    <div class="content header">
-      <div class="logo">
-        Header Logo
-      </div>
-        <ul class="nav">
-          <li>header link one</li>
-          <li>header link two</li>
-          <li>header link three</li>
-        </ul>
-    </div>
-    <div class="content photos">
-           photos
-    </div>
-    <div class="content quote">
-          quote
-    </div>
-    <div class="content ending">
-        advert
-    </div>
-    <div class="footer">
-           © The Odin Project 2022
-  </div>
-    
-</body>
-</html>
+/*stylesheet for landing-page project index.thml */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    height:100vh; /*this makes the body exactly the same height as the viewport*/
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    font-family: Roboto, sans-serif;
+    margin:0;
+}
+
+ul {
+  list-style-type: none;
+  display:flex;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.content{
+  display:flex;
+  padding: 0 100px;
+  flex:1;
+}
+
+.header{
+  display:flex;
+  justify-content:space-between;
+  color:#F9FAF8;
+  background-color: #1F2937;
+  padding-top:10px;
+}
+
+.logo{
+  font-size:24px;
+  color:#F9FAF8;
+}
+
+.photos {
+  display:flex;
+  background-color: white;
+}
+
+.quote {
+  display:flex;
+  background-color: #E5E7EB;
+}
+
+.sign {
+  display:flex;
+  background-color: white;
+}
+
+.footer {
+  display:flex;
+  background-color: #1F2937;
+  color: white;
+  justify-content:center;
+  align-items: center;
+  padding:20px;
+}
