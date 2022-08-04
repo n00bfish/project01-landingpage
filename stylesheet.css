@@ -23,7 +23,6 @@ ul.nav {
   list-style-type: none;
   display:flex;
   margin: 0;
-  padding-top: 10px;
   gap: 20px;
 }
 
@@ -35,16 +34,23 @@ a.nav {
 
 .content{
   display:flex;
-  padding: 0 100px;
+  padding: 0 200px;
   flex:1;
+}
+
+.content.head{
+  display:flex;
+  flex-direction:column;
+  background-color: #1F2937;
 }
 
 .header{
   display:flex;
   justify-content:space-between;
+  align-items:center;
   color:#F9FAF8;
-  background-color: #1F2937;
-  padding-top:10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .logo{
@@ -52,13 +58,54 @@ a.nav {
   color:#F9FAF8;
 }
 
+.hero{
+  display:flex;
+  flex-flow: row nowrap;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  gap: 50px;
+}
+
+.hero .left-side{
+  width: 300px;
+}
+
+.hero .main{
+  font-size:48px;
+  color:#F9FAF8;
+  font-weight: 800;
+}
+
+.hero .text {
+  font-size:18px;
+  color:#E5E7EB;
+  padding-top:5px;
+
+}
+
+button.sign-up {
+  margin-top:20px;
+  background-color:#3882F6;
+  padding: 5px 30px 5px 30px;
+  border: solid 2px #3882F6;
+  border-radius:8px;
+  color:#F9FAF8;
+  font-size:18px;
+  font-weight:500;
+}
+
+.hero .right-side{
+  width: 400px;
+}
+
 .info {
   display:flex;
   flex-direction:column;
   background-color: white;
   align-items:center;
-  padding: 40px;
-  gap:40px;
+  justify-items:center;
+  padding: 40px 150px 40px 150px;
+  gap:30px;
 }
 
 .title{
@@ -70,9 +117,9 @@ a.nav {
 
 .items {
   display:flex;
-  flex-flow:row wrap;
+  flex-flow:row nowrap;
   gap: 50px;
-  text-align:center;
+  text-align: center;
   padding-bottom: 40px;
 }
 
@@ -86,7 +133,7 @@ a.nav {
   display:flex;
   flex:0;
   flex-flow: column nowrap;
-  padding:100px 200px;
+  padding:100px 300px;
   background-color: #E5E7EB;
   gap:20px;
   font-size:36px;
@@ -110,5 +157,6 @@ b.author {
   color: white;
   justify-content:center;
   align-items: center;
-  padding:20px;
+  padding-top:20px;
+  padding-bottom:20px;
 }
