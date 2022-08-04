@@ -71,7 +71,7 @@ a.nav {
 }
 
 .hero .left-side{
-  width: 50%;
+  width: 30%;
 }
 
 .hero .main{
@@ -100,12 +100,11 @@ button.sign-up {
 
 .hero .right-side{
   display:flex;
-
 }
 
 .hero .placeholder{
   display:flex;
-  width: 50%;
+  width: 70%;
   background-color: grey;
   border-radius:10px;
   justify-items:center;
