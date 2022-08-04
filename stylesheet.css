@@ -1,6 +1,10 @@
 /*stylesheet for landing-page project index.thml */
 @import url('https://fonts.googleapis.com/css2?family=Roboto');
 
+.box {
+  box-sizing: border-box;
+}
+
 body{
     font-family: Roboto, sans-serif;
     height:100vh; /*this makes the body exactly the same height as the viewport*/
@@ -40,7 +44,6 @@ a.nav {
 }
 
 .content.head{
-  display:flex;
   flex-direction:column;
   background-color: #1F2937;
 }
@@ -111,8 +114,7 @@ button.sign-up {
   color:#F9FAF8;
   }
 
-.info {
-  display:flex;
+.content.info {
   flex-direction:column;
   background-color: white;
   align-items:center;
@@ -142,8 +144,7 @@ button.sign-up {
   width: 200px;
 }
 
-.quote {
-  display:flex;
+.content.quote {
   flex:0;
   flex-flow: column nowrap;
   padding:100px 300px;
@@ -159,13 +160,32 @@ b.author {
   justify-content:end;
 }
 
-.end {
-  display:flex;
+.content.end {
   background-color: white;
   padding-top: 100px;
   padding-bottom:100px;
   justify-content:center;
   align-content:center;
+}
+
+.end .action{
+  display:flex;
+  flex-direction:column;
+  height: 150px;
+  width: auto;
+  background-color:#3882F6;
+  border-radius: 8px;
+
+}
+
+.action .left{
+  display:flex;
+  flex-direction:column;
+}
+
+.action .right{
+  display:flex;
+  flex-direction:row;
 }
 
 .footer {
