@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto');
 
 body{
+    font-family: Roboto, sans-serif;
     height:100vh; /*this makes the body exactly the same height as the viewport*/
     display:flex;
     flex-direction: column;
