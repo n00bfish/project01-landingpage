@@ -35,7 +35,7 @@ a.nav {
 
 .content{
   display:flex;
-  padding: 0 200px;
+  padding: 0 150px;
   flex:1;
 }
 
@@ -56,19 +56,21 @@ a.nav {
 
 .logo{
   font-size:24px;
+  font-weight:800;
   color:#F9FAF8;
 }
 
 .hero{
-  display:flex;
+  display: flex;
   flex-flow: row nowrap;
+  justify-content: start;
   padding-top: 100px;
   padding-bottom: 100px;
   gap: 50px;
 }
 
 .hero .left-side{
-  width: 300px;
+  width: 500px;
 }
 
 .hero .main{
@@ -96,8 +98,18 @@ button.sign-up {
 }
 
 .hero .right-side{
-  width: 400px;
+  display:flex;
+
 }
+
+.hero .placeholder{
+  display:flex;
+  background-color: grey;
+  border-radius:10px;
+  justify-items:center;
+  align-items:center;
+  color:#F9FAF8;
+  }
 
 .info {
   display:flex;
@@ -150,6 +162,10 @@ b.author {
 .end {
   display:flex;
   background-color: white;
+  padding-top: 100px;
+  padding-bottom:100px;
+  justify-content:center;
+  align-content:center;
 }
 
 .footer {
