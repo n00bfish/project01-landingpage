@@ -170,7 +170,8 @@ b.author {
 
 .end .action{
   display:flex;
-  flex-direction:column;
+  flex:1;
+  flex-direction:row;
   height: 150px;
   width: auto;
   background-color:#3882F6;
@@ -179,13 +180,16 @@ b.author {
 }
 
 .action .left{
-  display:flex;
   flex-direction:column;
 }
 
+.left main{
+  
+}
+
 .action .right{
-  display:flex;
   flex-direction:row;
+  justify-items:center;
 }
 
 .footer {
